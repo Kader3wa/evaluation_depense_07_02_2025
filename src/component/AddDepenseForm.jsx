@@ -34,7 +34,7 @@ const AddDepenseForm = () => {
             <Form className="form">
                 <Form.Group className="mb-3">
                     <Form.Control
-                        type="text" placeholder="Entrez le label de la depense..."
+                        type="text" placeholder="Entrez le label de la depense.."
                         required
                         value={label}
                         onChange={(ev) => setLabel(ev.target.value)}
@@ -45,7 +45,7 @@ const AddDepenseForm = () => {
                         onChange={(ev) => setCategory(ev.target.value)}
                         required
                     >
-                        <option>Categorie de la dépense...</option>
+                        <option>Categorie de la dépense..</option>
                         {
                             CATEGORIES.map((cat, index) => {
                                 return (
@@ -62,7 +62,7 @@ const AddDepenseForm = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                     <Form.Control
-                        type="text" placeholder="Entrez le montant de la depense..."
+                        type="text" placeholder="Entrez le montant de la depense.."
                         required
                         value={montant}
                         onChange={(ev) => setMontant(ev.target.value)}
